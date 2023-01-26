@@ -5,8 +5,8 @@ import {
   BanknotesIcon,
 } from "@heroicons/react/24/outline";
 import { CometButton } from "@comet-labs/react";
-import { Inter } from "@next/font/google";
-const inter = Inter({ subsets: ["latin"] });
+import { Work_Sans } from "@next/font/google";
+const inter = Work_Sans({ subsets: ["latin"] });
 
 export default function Home() {
   return (
