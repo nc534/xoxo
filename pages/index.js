@@ -3,12 +3,30 @@ import {
   UserCircleIcon,
   PhotoIcon,
   BanknotesIcon,
+  PencilSquareIcon,
+  EnvelopeIcon,
+  PencilIcon,
 } from "@heroicons/react/24/outline";
-import { CometButton } from "@comet-labs/react";
+import {
+  LoginButton,
+  MintButton,
+  useAccount,
+  useMint,
+  useSignMessage,
+  useGetSharedSecret,
+} from "@comet-labs/react";
 import { Work_Sans } from "@next/font/google";
 const work_sans = Work_Sans({ subsets: ["latin"] });
 
 export default function Home() {
+  const account = useAccount();
+
+  const { startMint } = useMint({ collectionId: "22c6ecefe246" });
+  const { signMessage } = useSignMessage({ message: "<MESSAGE>" });
+  const { getSharedSecret } = useGetSharedSecret({
+    publicKey: "Dgq5B8i5NJJfPoUgpkFZDzRr84zd1BJrUBntJt1EBvgd",
+  });
+
   return (
     <>
       <Head>
@@ -20,6 +38,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
       <main className={work_sans.className}>
         <div className="isolate bg-white">
           <div className="absolute inset-x-0 top-[-10rem] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[-20rem]">
@@ -47,6 +66,7 @@ export default function Home() {
               </defs>
             </svg>
           </div>
+
           <div className="px-6 pt-6 lg:px-8">
             <nav
               className="flex items-center justify-between"
@@ -73,7 +93,7 @@ export default function Home() {
                   </h1>
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
-                      href="https://comet-3.gitbook.io/comet-sdk/project-guides/launch-and-mint-your-first-nft-collection"
+                      href="https://comet-3.gitbook.io/comet-sdk/reference/comet-sdk-reference/comet-react-sdk"
                       target="_blank"
                       className="rounded-md bg-slate-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-slate-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                     >
@@ -127,10 +147,7 @@ export default function Home() {
                     <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
                       <div className="bg-white rounded-md shadow-2xl ring-1 ring-gray-900/10">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 rounded-md">
-                          <CometButton
-                            action="mint"
-                            collectionId="22c6ecefe246"
-                          />
+                          <LoginButton className="z-50" />
                         </div>
                       </div>
                     </div>
@@ -172,6 +189,9 @@ export default function Home() {
                     <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
                       <div className="bg-white rounded-md shadow-2xl ring-1 ring-gray-900/10">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 rounded-md">
+                          <h2 className="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">
+                            Components
+                          </h2>
                           <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
                             <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-slate-600 text-white sm:h-12 sm:w-12">
                               <UserCircleIcon
@@ -186,26 +206,10 @@ export default function Home() {
                               <p className="mt-1 text-sm text-gray-500 mb-3">
                                 Let your users sign in with Comet
                               </p>
-                              <CometButton action="login" />
+                              <LoginButton className="z-50" />
                             </div>
                           </div>
-                          <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
-                            <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-slate-600 text-white sm:h-12 sm:w-12">
-                              <PhotoIcon
-                                className="h-6 w-6"
-                                aria-hidden="true"
-                              />
-                            </div>
-                            <div className="ml-4">
-                              <p className="text-base font-medium text-gray-900">
-                                View Comet Gallery
-                              </p>
-                              <p className="mt-1 text-sm text-gray-500 mb-2">
-                                Let your users view their Comet gallery
-                              </p>
-                              <CometButton action="gallery" />
-                            </div>
-                          </div>
+
                           <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
                             <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-slate-600 text-white sm:h-12 sm:w-12">
                               <BanknotesIcon
@@ -221,12 +225,156 @@ export default function Home() {
                                 Let your users mint NFTs, with Stripe if you're
                                 charging for it
                               </p>
-                              <CometButton
-                                action="mint"
-                                collectionId="22c6ecefe246"
-                              />
+                              <MintButton collectionId="22c6ecefe246" />
                             </div>
                           </div>
+                          <h2 className="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">
+                            Hooks
+                          </h2>
+
+                          <a
+                            href="https://comet-3.gitbook.io/comet-sdk/reference/comet-sdk-reference/comet-react-sdk/hooks/useaccount"
+                            target="_blank"
+                          >
+                            <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
+                              <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-slate-600 text-white sm:h-12 sm:w-12">
+                                <UserCircleIcon
+                                  className="h-6 w-6"
+                                  aria-hidden="true"
+                                />
+                              </div>
+                              <div className="ml-4">
+                                <p className="text-base font-medium text-gray-900">
+                                  <code>useAccount</code>
+                                </p>
+                                <p className="mt-1 text-sm text-gray-500 mb-3">
+                                  Get the current logged-in user's account.
+                                </p>
+                                <p className="mt-1 text-sm text-gray-500 mb-3">
+                                  <code>
+                                    {account &&
+                                      `Successfully logged in! Welcome, @${account.username}!`}
+                                  </code>
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://comet-3.gitbook.io/comet-sdk/reference/comet-sdk-reference/comet-react-sdk/hooks/usemint"
+                            target="_blank"
+                          >
+                            <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
+                              <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-slate-600 text-white sm:h-12 sm:w-12">
+                                <BanknotesIcon
+                                  className="h-6 w-6"
+                                  aria-hidden="true"
+                                />
+                              </div>
+                              <div className="ml-4">
+                                <p className="text-base font-medium text-gray-900">
+                                  <code>useMint</code>
+                                </p>
+                                <p className="mt-1 text-sm text-gray-500 mb-3">
+                                  Start the process of minting a token.
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                          <p className="mt-1 ml-20 text-sm text-gray-500 mb-3">
+                            <button
+                              className="rounded-md bg-slate-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-slate-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                              onClick={startMint}
+                            >
+                              Custom mint button
+                            </button>
+                          </p>
+
+                          <a
+                            href="https://comet-3.gitbook.io/comet-sdk/reference/comet-sdk-reference/comet-react-sdk/hooks/usesignmessage"
+                            target="_blank"
+                          >
+                            <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
+                              <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-slate-600 text-white sm:h-12 sm:w-12">
+                                <PencilIcon
+                                  className="h-6 w-6"
+                                  aria-hidden="true"
+                                />
+                              </div>
+                              <div className="ml-4">
+                                <p className="text-base font-medium text-gray-900">
+                                  <code>useSignMessage</code>
+                                </p>
+                                <p className="mt-1 text-sm text-gray-500 mb-3">
+                                  Sign any message with your customers' Comet
+                                  wallet.{" "}
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                          <p className="mt-1 ml-20 text-sm text-gray-500 mb-3">
+                            <button
+                              className="rounded-md bg-slate-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-slate-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                              onClick={signMessage}
+                            >
+                              Click Here to sign message!
+                            </button>
+                          </p>
+
+                          <a
+                            href="https://comet-3.gitbook.io/comet-sdk/reference/comet-sdk-reference/comet-react-sdk/hooks/usesigntransaction"
+                            target="_blank"
+                          >
+                            <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
+                              <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-slate-600 text-white sm:h-12 sm:w-12">
+                                <PencilSquareIcon
+                                  className="h-6 w-6"
+                                  aria-hidden="true"
+                                />
+                              </div>
+                              <div className="ml-4">
+                                <p className="text-base font-medium text-gray-900">
+                                  <code>useSignTransaction</code>
+                                </p>
+                                <p className="mt-1 text-sm text-gray-500 mb-3">
+                                  Sign a Solana transaction with your customers'
+                                  Comet wallet.
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+
+                          <a
+                            href="https://comet-3.gitbook.io/comet-sdk/reference/comet-sdk-reference/comet-react-sdk/hooks/usegetsharedsecret"
+                            target="_blank"
+                          >
+                            <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
+                              <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-slate-600 text-white sm:h-12 sm:w-12">
+                                <EnvelopeIcon
+                                  className="h-6 w-6"
+                                  aria-hidden="true"
+                                />
+                              </div>
+                              <div className="ml-4">
+                                <p className="text-base font-medium text-gray-900">
+                                  <code>useGetSharedSecret</code>
+                                </p>
+                                <p className="mt-1 text-sm text-gray-500 mb-3">
+                                  Generate a shared secret using Elliptic Curve
+                                  Diffie-Hellman key exchange with your
+                                  customers' Comet wallet.
+                                </p>
+                              </div>
+                            </div>
+                          </a>
+                          <p className="mt-1 ml-20 text-sm text-gray-500 mb-3">
+                            <button
+                              className="rounded-md bg-slate-600 px-3.5 py-1.5 text-base font-semibold leading-7 text-white shadow-sm hover:bg-slate-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                              onClick={getSharedSecret}
+                            >
+                              Click for diffie hellman
+                            </button>
+                          </p>
                         </div>
                       </div>
                     </div>

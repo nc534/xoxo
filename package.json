@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@comet-labs/react": "^0.4.0",
+    "@comet-labs/react": "^1.0.0-alpha.1",
     "@headlessui/react": "^1.7.7",
     "@heroicons/react": "^2.0.14",
     "@next/font": "13.1.5",
