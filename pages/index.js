@@ -89,7 +89,7 @@ export default function Home() {
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl">
                   <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
-                    Introducing the Comet Web SDK
+                    <img src="../kirby.jpg" />
                   </h1>
                   <div className="mt-10 flex items-center gap-x-6">
                     <a
