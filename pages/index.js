@@ -38,7 +38,7 @@ export default function Home() {
           content="The Comet React SDK lets you launch new Solana NFT collections in your app!"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/cometfavicon.png" />
       </Head>
 
       <main className={work_sans.className}>
