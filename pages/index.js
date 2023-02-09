@@ -55,7 +55,7 @@ export default function Home() {
                   className="-m-1.5 p-1.5"
                 >
                   <span className="sr-only">Comet React SDK</span>
-                  <img className="h-8" src="/comet.png" alt="" />
+                  <img className="h-8" src="/cometfavicon.png" alt="" />
                 </a>
               </div>
             </nav>
@@ -89,11 +89,11 @@ export default function Home() {
                   <div className="mt-8 flow-root max-w-2xl m-auto">
                     <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
                       <div className="bg-white rounded-md shadow-2xl ring-1 ring-gray-900/10">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 rounded-md">
+                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-6 sm:p-6 rounded-md">
                           <h2 className="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">
                             Here's a token of my love and affection,
                           </h2>
-                          <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
+                          {/* <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
                             <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-slate-600 text-white sm:h-12 sm:w-12">
                               <UserCircleIcon
                                 className="h-6 w-6"
@@ -109,7 +109,7 @@ export default function Home() {
                               </p>
                               <LoginButton className="z-50" />
                             </div>
-                          </div>
+                          </div> */}
 
                           <h2 className="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">
                             A Solana NFT with our love's connection.
@@ -127,8 +127,7 @@ export default function Home() {
                                 Take his love.
                               </p>
                               <p className="mt-1 text-sm text-gray-500 mb-2">
-                                Let your users mint NFTs, with Stripe if you're
-                                charging for it
+                                please...
                               </p>
                               <MintButton collectionId="22c6ecefe246" />
                             </div>
