@@ -93,7 +93,8 @@ export default function Home() {
                           <h2 className="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">
                             Here's a token of my love and affection,
                           </h2>
-                          {/* <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
+                          
+                          <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
                             <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-slate-600 text-white sm:h-12 sm:w-12">
                               <UserCircleIcon
                                 className="h-6 w-6"
@@ -109,7 +110,7 @@ export default function Home() {
                               </p>
                               <LoginButton className="z-50" />
                             </div>
-                          </div> */}
+                          </div>
 
                           <h2 className="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">
                             A Solana NFT with our love's connection.
