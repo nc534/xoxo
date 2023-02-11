@@ -42,7 +42,7 @@ export default function Home() {
       </Head>
 
       <main className={work_sans.className}>
-        <div className={"isolate bg-white " + styles.main}>
+        <div className={"isolate " + styles.main}>
           <div className="px-6 pt-6 lg:px-8">
             <nav
               className="flex items-center justify-between"
@@ -64,11 +64,11 @@ export default function Home() {
             <div className="relative py-24 sm:py-32 lg:pb-40">
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl">
-                  <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+                  <h1 className="text-4xl font-bold tracking-tight text-purple-900 sm:text-6xl">
                     Happy Hackathon!!!!
                   </h1>
 
-                  <div className="marquee">
+                  {/* <div className="marquee">
                     <div className="marquee__group">
                       <img src="../kirby.jpg" width="100px" />
                       <img src="../kirby.jpg" width="100px" />
@@ -84,16 +84,15 @@ export default function Home() {
                       <img src="../kirby.jpg" width="100px" />
                       <img src="../kirby.jpg" width="100px" />
                     </div>
-                  </div>
+                  </div> */}
 
                   <div className="mt-8 flow-root max-w-2xl m-auto">
-                    <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
+                    <div>
                       <div className="bg-white rounded-md shadow-2xl ring-1 ring-gray-900/10">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-6 sm:p-6 rounded-md">
                           <h2 className="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">
                             Here's a token of my love and affection,
                           </h2>
-                          
                           <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
                             <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-slate-600 text-white sm:h-12 sm:w-12">
                               <UserCircleIcon
