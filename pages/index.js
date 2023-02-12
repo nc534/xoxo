@@ -234,19 +234,19 @@ export default function Home() {
                               <img src="../HappyChewy.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute right-5 bottom-5e">
+                            <div class="absolute">
                               <MintButton collectionId="e043090e5a26" />
                             </div>
                             <img src="../SleepingSterlingOnBlanket.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute right-5 bottom-5">
+                            <div class="absolute">
                               <MintButton collectionId="2b06512dee8b" />
                             </div>
                             <img src="../SleepingChewy.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute right-5 bottom-5">
+                            <div class="absolute">
                               <MintButton collectionId="011b0741c913" />
                             </div>
                             <img src="../PuppyChewy.jpg" class="rounded-2xl hover:scale-105"/>
