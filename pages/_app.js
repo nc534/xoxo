@@ -8,6 +8,7 @@ const cometProviderConfig = {
 export default function App({ Component, pageProps }) {
   return (
     <CometProvider config={cometProviderConfig}>
+      <LoginButton />
       <Component {...pageProps} />
     </CometProvider>
   );
