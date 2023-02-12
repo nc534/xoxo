@@ -23,21 +23,23 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   const account = useAccount();
 
-  const { sterlingSunbathingMint } = useMint({ collectionId: "1820849d5909" });
-  const { chewyAndSterlingMint } = useMint({collectionId: "e680973cd5bd" });
-  const { chewyWithToyMint } = useMint({collectionId: "f966ac01ae8b" });
-  const { chewyWindowMint } = useMint({collectionId: "d10388d182b6" });
-  const { chewyYawnMint } = useMint({collectionId: "b26911637f2e" });
-  const { chewyViewMint } = useMint({collectionId: "4c531c59cc82" });
-  const { chewyFlowersMint } = useMint({collectionId: "11fd5d2e56c2" });
-  const { chewyHappyMint } = useMint({collectionId: "f09198274723" });
-  const { puppyChewyMint } = useMint({collectionId: "011b0741c913" });
-  const { chewySleepingMint } = useMint({collectionId: "2b06512dee8b" });
-  const { sterlingCurledMint } = useMint({collectionId: "7be1858f20c7" });
-  const { sterlingBlanketMint } = useMint({collectionId: "e043090e5a26" });
-  const { sterlingPaperbagMint } = useMint({collectionId: "ab14ae84da38" });
-  const { sterlingYawnMint } = useMint({collectionId: "b89241afe8f9" });
-  const { sterlingChairMint }= useMint({collectionId: "ede8204b66ac" });
+  //Only startMint works
+
+  // const { sterlingSunbathingMint } = useMint({ collectionId: "1820849d5909" });
+  // const { chewyAndSterlingMint } = useMint({collectionId: "e680973cd5bd" });
+  // const { chewyWithToyMint } = useMint({collectionId: "f966ac01ae8b" });
+  // const { chewyWindowMint } = useMint({collectionId: "d10388d182b6" });
+  // const { chewyYawnMint } = useMint({collectionId: "b26911637f2e" });
+  // const { chewyViewMint } = useMint({collectionId: "4c531c59cc82" });
+  // const { chewyFlowersMint } = useMint({collectionId: "11fd5d2e56c2" });
+  // const { chewyHappyMint } = useMint({collectionId: "f09198274723" });
+  // const { puppyChewyMint } = useMint({collectionId: "011b0741c913" });
+  // const { chewySleepingMint } = useMint({collectionId: "2b06512dee8b" });
+  // const { sterlingCurledMint } = useMint({collectionId: "7be1858f20c7" });
+  // const { sterlingBlanketMint } = useMint({collectionId: "e043090e5a26" });
+  // const { sterlingPaperbagMint } = useMint({collectionId: "ab14ae84da38" });
+  // const { sterlingYawnMint } = useMint({collectionId: "b89241afe8f9" });
+  // const { sterlingChairMint }= useMint({collectionId: "ede8204b66ac" });
   const { startMint } = useMint({collectionId: "ab694eaec22f" });
 
   const { signMessage } = useSignMessage({ message: "<MESSAGE>" });
@@ -152,49 +154,58 @@ export default function Home() {
                           </div> */}
                         <div class="-m-3 grid grid-cols-4 gap-4 items-center">
                           <div>
-                            <button onClick={sterlingSunbathingMint}>
+                            <div class="absolute invisible">
+                              <MintButton collectionId="1820849d5909" />
+                            </div>
                               <img src="../SterlingSunbathing.jpg" class="rounded-2xl hover:scale-105"/>
-                            </button>
                           </div>
                           <div>
-                            <button onClick={chewyAndSterlingMint}>
+                            <div class="absolute invisible">
+                              <MintButton collectionId="e680973cd5bd" />
+                            </div>
                               <img src="../ChewyAndSterling.jpg" class="rounded-2xl hover:scale-105"/>
-                            </button>
                           </div>
                           <div>
-                            <button onClick={sterlingCurledMint}>
+                            <div class="absolute invisible">
+                              <MintButton collectionId="7be1858f20c7" />
+                            </div>
                               <img src="../SleepingSterlingCurled.jpg" class="rounded-2xl hover:scale-105"/>
-                            </button>
                           </div>
                           <div>
-                            <button onClick={chewyWithToyMint}>
+                            <div class="absolute invisible">
+                              <MintButton collectionId="f966ac01ae8b" />
+                            </div>
                               <img src="../ChewyAndToy.jpg" class="rounded-2xl hover:scale-105"/>
-                            </button>
                           </div>
                           <div>
-                            <button onClick={sterlingPaperbagMint}>
+                            <div class="absolute invisible">
+                              <MintButton collectionId="ab14ae84da38" />
+                            </div>
                               <img src="../SterlingInPaperBag.jpg" class="rounded-2xl hover:scale-105"/>
-                            </button>
                           </div>
                           <div>
-                            <button onClick={chewyViewMint}>
+                            <div class="absolute invisible">
+                              <MintButton collectionId="4c531c59cc82" />
+                            </div>
                               <img src="../ChewyView.jpg" class="rounded-2xl hover:scale-105"/>
-                            </button>
                           </div>
                           <div>
-                            <button onClick={chewyYawnMint}>
+                            <div class="absolute invisible">
+                              <MintButton collectionId="b26911637f2e" />
+                            </div>
                               <img src="../ChewyMidYawn.jpg" class="rounded-2xl hover:scale-105"/>
-                            </button>
                           </div>
                           <div>
-                            <button onClick={chewyWindowMint}>
+                            <div class="absolute invisible">
+                              <MintButton collectionId="d10388d182b6" />
+                            </div>
                               <img src="../ChewyLookingOutWindow.jpg" class="rounded-2xl hover:scale-105"/>
-                            </button>
                           </div>
                           <div>
-                            <button onClick={sterlingChairMint}>
+                            <div class="absolute invisible">
+                              <MintButton collectionId="ede8204b66ac" />
+                            </div>
                               <img src="../SterlingOnChair.jpg" class="rounded-2xl hover:scale-105"/>
-                            </button>
                           </div>
                           <div>
                             <button onClick={startMint}>
@@ -202,33 +213,37 @@ export default function Home() {
                             </button>
                           </div>
                           <div>
-                            <button onClick={sterlingYawnMint}>
+                            <div class="absolute invisible">
+                              <MintButton collectionId="b89241afe8f9" />
+                            </div>
                               <img src="../SterlingMidYawn.jpg" class="rounded-2xl hover:scale-105"/>
-                            </button>
                           </div>
                           <div>
-                            <button onClick={chewyFlowersMint}>
+                            <div class="absolute invisible">
+                              <MintButton collectionId="11fd5d2e56c2" />
+                            </div>
                               <img src="../ChewyWithFlowers.jpg" class="rounded-2xl hover:scale-105"/>
-                            </button>
                           </div>
                           <div>
-                            <button onClick={chewyHappyMint}>
+                            <div class="absolute invisible">
+                              <MintButton collectionId="f09198274723" />
+                            </div>
                               <img src="../HappyChewy.jpg" class="rounded-2xl hover:scale-105"/>
-                            </button>
                           </div>
                           <div>
-                            <button onClick={sterlingBlanketMint}>
-                              <img src="../SleepingSterlingOnBlanket.jpg" class="rounded-2xl hover:scale-105"/>
-                            </button>
+                            <div class="absolute invisible">
+                              <MintButton collectionId="e043090e5a26" />
+                            </div>
+                            <img src="../SleepingSterlingOnBlanket.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute">
+                            <div class="absolute invisible">
                               <MintButton collectionId="2b06512dee8b" />
                             </div>
                             <img src="../SleepingChewy.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute">
+                            <div class="absolute invisible">
                               <MintButton collectionId="011b0741c913" />
                             </div>
                             <img src="../PuppyChewy.jpg" class="rounded-2xl hover:scale-105"/>
