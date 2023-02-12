@@ -23,7 +23,23 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   const account = useAccount();
 
-  const { startMint } = useMint({ collectionId: "1820849d5909" });
+  const { sterlingSunbathingMint } = useMint({ collectionId: "1820849d5909" });
+  const { chewyAndSterlingMint } = useMint({collectionId: "e680973cd5bd" });
+  const { chewyWithToyMint } = useMint({collectionId: "f966ac01ae8b" });
+  const { chewyWindowMint } = useMint({collectionId: "d10388d182b6" });
+  const { chewyYawnMint } = useMint({collectionId: "b26911637f2e" });
+  const { chewyViewMint } = useMint({collectionId: "4c531c59cc82" });
+  const { chewyFlowersMint } = useMint({collectionId: "11fd5d2e56c2" });
+  const { chewyHappyMint } = useMint({collectionId: "f09198274723" });
+  const { puppyChewyMint } = useMint({collectionId: "011b0741c913" });
+  const { chewySleepingMint } = useMint({collectionId: "2b06512dee8b" });
+  const { sterlingCurledMint } = useMint({collectionId: "7be1858f20c7" });
+  const { sterlingBlanketMint } = useMint({collectionId: "e043090e5a26" });
+  const { sterlingPaperbagMint } = useMint({collectionId: "ab14ae84da38" });
+  const { sterlingYawnMint } = useMint({collectionId: "b89241afe8f9" });
+  const { sterlingChairMint } = useMint({collectionId: "ede8204b66ac" });
+  const { sterlingCoversMint } = useMint({collectionId: "ab694eaec22f" });
+
   const { signMessage } = useSignMessage({ message: "<MESSAGE>" });
   const { getSharedSecret } = useGetSharedSecret({
     publicKey: "Dgq5B8i5NJJfPoUgpkFZDzRr84zd1BJrUBntJt1EBvgd",
@@ -88,8 +104,8 @@ export default function Home() {
 
                   <div class="mt-8">
                     <div>
-                      <div class="bg-white rounded-md shadow-2xl ring-1 ring-gray-900/10">
-                        <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-6 sm:p-6 rounded-md">
+                      <div class="rounded-2xl shadow-2xl shadow-slate-800/70">
+                        <div class="relative grid gap-6 rounded-2xl bg-slate-800 px-5 py-6 sm:gap-6 sm:p-6 rounded-md">
                           <h2 class="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">Here's a token of my love and affection,
                           </h2>
                       {/* <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
@@ -133,48 +149,83 @@ export default function Home() {
                           </div> */}
                         <div class="-m-3 grid grid-cols-4 gap-4 ">
                           <div>
-                            <button onClick={startMint}>
-                              <img src="../SterlingSunbathing.jpg"/>
+                            <button onClick={sterlingSunbathingMint}>
+                              <img src="../SterlingSunbathing.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                           <div>
-                            <button onClick={startMint}>
-                              <img src="../SterlingSunbathing.jpg"/>
+                            <button onClick={chewyAndSterlingMint}>
+                              <img src="../ChewyAndSterling.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                           <div>
-                            <button onClick={startMint}>
-                              <img src="../SterlingSunbathing.jpg"/>
+                            <button onClick={sterlingCurledMint}>
+                              <img src="../SleepingSterlingCurled.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                           <div>
-                            <button onClick={startMint}>
-                              <img src="../SterlingSunbathing.jpg"/>
+                            <button onClick={chewyWithToyMint}>
+                              <img src="../ChewyAndToy.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                           <div>
-                            <button onClick={startMint}>
-                              <img src="../SterlingSunbathing.jpg"/>
+                            <button onClick={sterlingPaperbagMint}>
+                              <img src="../SterlingInPaperBag.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                           <div>
-                            <button onClick={startMint}>
-                              <img src="../SterlingSunbathing.jpg"/>
+                            <button onClick={chewyViewMint}>
+                              <img src="../ChewyView.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                           <div>
-                            <button onClick={startMint}>
-                              <img src="../SterlingSunbathing.jpg"/>
+                            <button onClick={chewyYawnMint}>
+                              <img src="../ChewyMidYawn.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                           <div>
-                            <button onClick={startMint}>
-                              <img src="../SterlingSunbathing.jpg"/>
+                            <button onClick={chewyWindowMint}>
+                              <img src="../ChewyLookingOutWindow.jpg" class="rounded-2xl"/>
                             </button>
                           </div>
                           <div>
-                            <button onClick={startMint}>
-                              <img src="../SterlingSunbathing.jpg"/>
+                            <button onClick={sterlingChairMint}>
+                              <img src="../SterlingOnChair.jpg" class="rounded-2xl"/>
+                            </button>
+                          </div>
+                          <div>
+                            <button onClick={sterlingCoversMint}>
+                              <img src="../SterlingUnderCovers.jpg" class="rounded-2xl"/>
+                            </button>
+                          </div>
+                          <div>
+                            <button onClick={sterlingYawnMint}>
+                              <img src="../SterlingMidYawn.jpg" class="rounded-2xl"/>
+                            </button>
+                          </div>
+                          <div>
+                            <button onClick={chewyFlowersMint}>
+                              <img src="../ChewyWithFlowers.jpg" class="rounded-2xl"/>
+                            </button>
+                          </div>
+                          <div>
+                            <button onClick={chewyHappyMint}>
+                              <img src="../HappyChewy.jpg" class="rounded-2xl"/>
+                            </button>
+                          </div>
+                          <div>
+                            <button onClick={sterlingBlanketMint}>
+                              <img src="../SterlingSunbathing.jpg" class="rounded-2xl"/>
+                            </button>
+                          </div>
+                          <div>
+                            <button onClick={chewySleepingMint}>
+                              <img src="../SleepingChewy.jpg" class="rounded-2xl"/>
+                            </button>
+                          </div>
+                          <div>
+                            <button onClick={puppyChewyMint}>
+                              <img src="../PuppyChewy.jpg" class="rounded-2xl"/>
                             </button>
                           </div>
                         </div>
