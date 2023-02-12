@@ -2,7 +2,7 @@ import "@/styles/globals.css";
 import { CometProvider } from "@comet-labs/react";
 
 const cometProviderConfig = {
-  publishableKey: "oAEGrKqbF4GHUZBnE3EJtvw1VELcc2mT",
+  publishableKey: "pR1T5f7vQMtZEm7ZNgBPBFFRGsLp1Nki",
 };
 
 export default function App({ Component, pageProps }) {
