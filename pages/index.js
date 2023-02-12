@@ -194,7 +194,7 @@ export default function Home() {
                             </button>
                           </div>
                           <div>
-                            <button onClick={sterlingCoversMint}>
+                            <button onClick={startMint}>
                               <img src="../SterlingUnderCovers.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
@@ -214,7 +214,7 @@ export default function Home() {
                             </button>
                           </div>
                           <div>
-                            <button onClick={startMint}>
+                            <button onClick={sterlingBlanketMint}>
                               <img src="../SleepingSterlingOnBlanket.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
