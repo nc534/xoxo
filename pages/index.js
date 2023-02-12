@@ -84,8 +84,8 @@ export default function Home() {
                   <h1 className="text-4xl tracking-tight text-purple-900 sm:text-6xl">
                     Chewy and Sterling NFTs
                   </h1>
-                  <p className="mt-1 text-sm text-gray-500 mb-2">Welcome to the page of Noel's Chewy and Sterling NFTs!  Here you can find some cute NFTs of a dog and a cat! 
-                    Meet Chewy and Sterling - two lovable critters! Collect them when you can. Enjoy!</p>
+                  <p className="mt-3 text-xl text-gray-500 mb-2">Welcome to the page of Noel's Pets NFTs! Meet Chewy and Sterling - two lovable critters! Here you can find some cute NFTs of a dog and a cat. 
+                  Collect them when you can! Enjoy!</p>
 
                   {/* <div className="marquee">
                     <div className="marquee__group">
@@ -222,15 +222,16 @@ export default function Home() {
                             </button>
                           </div>
                           <div>
-                            <button onClick={chewySleepingMint}>
-                              <img src="../SleepingChewy.jpg" class="rounded-2xl hover:scale-105"/>
-                            </button>
+                            <div class="absolute">
+                              <MintButton collectionId="2b06512dee8b" />
+                            </div>
+                            <img src="../SleepingChewy.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <MintButton style="background:transparent;" collectionId="011b0741c913" />
-                            <button onClick={puppyChewyMint}>
-                              <img src="../PuppyChewy.jpg" class="rounded-2xl hover:scale-105"/>
-                            </button>
+                            <div class="absolute">
+                              <MintButton collectionId="011b0741c913" />
+                            </div>
+                            <img src="../PuppyChewy.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                         </div>
                       </div>
