@@ -23,7 +23,7 @@ import styles from "../styles/Home.module.css";
 export default function Home() {
   const account = useAccount();
 
-  const { startMint } = useMint({ collectionId: "22c6ecefe246" });
+  const { startMint } = useMint({ collectionId: "1820849d5909" });
   const { signMessage } = useSignMessage({ message: "<MESSAGE>" });
   const { getSharedSecret } = useGetSharedSecret({
     publicKey: "Dgq5B8i5NJJfPoUgpkFZDzRr84zd1BJrUBntJt1EBvgd",
@@ -63,7 +63,7 @@ export default function Home() {
           <main>
             <div className="relative py-24 sm:py-32 lg:pb-40">
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl">
+                <div>
                   <h1 className="text-4xl font-bold tracking-tight text-purple-900 sm:text-6xl">
                     Happy Hackathon!!!!
                   </h1>
@@ -86,36 +86,35 @@ export default function Home() {
                     </div>
                   </div> */}
 
-                  <div className="mt-8 flow-root max-w-2xl m-auto">
+                  <div class="mt-8">
                     <div>
-                      <div className="bg-white rounded-md shadow-2xl ring-1 ring-gray-900/10">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-6 sm:p-6 rounded-md">
-                          <h2 className="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">
-                            Here's a token of my love and affection,
+                      <div class="bg-white rounded-md shadow-2xl ring-1 ring-gray-900/10">
+                        <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-6 sm:p-6 rounded-md">
+                          <h2 class="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">Here's a token of my love and affection,
                           </h2>
-                          <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
-                            <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-slate-600 text-white sm:h-12 sm:w-12">
-                              <UserCircleIcon
-                                className="h-6 w-6"
-                                aria-hidden="true"
-                              />
-                            </div>
-                            <div className="ml-4">
-                              <p className="text-base font-medium text-gray-900">
-                                Login with Comet
-                              </p>
-                              <p className="mt-1 text-sm text-gray-500 mb-3">
-                                Let your users sign in with Comet
-                              </p>
-                              <LoginButton className="z-50" />
-                            </div>
-                          </div>
+                      {/* <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
+                        <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-slate-600 text-white sm:h-12 sm:w-12">
+                          <UserCircleIcon
+                            className="h-6 w-6"
+                            aria-hidden="true"
+                          />
+                        </div>
+                        <div className="ml-4">
+                          <p className="text-base font-medium text-gray-900">
+                            Login with Comet
+                          </p>
+                          <p className="mt-1 text-sm text-gray-500 mb-3">
+                            Let your users sign in with Comet
+                          </p>
+                          <LoginButton className="z-50" />
+                        </div>
+                      </div> */}
 
-                          <h2 className="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">
+                        <h2 className="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">
                             A Solana NFT with our love's connection.
-                          </h2>
+                        </h2>
 
-                          <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
+                        {/* <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
                             <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-slate-600 text-white sm:h-12 sm:w-12">
                               <BanknotesIcon
                                 className="h-6 w-6"
@@ -131,10 +130,57 @@ export default function Home() {
                               </p>
                               <MintButton collectionId="1820849d5909" />
                             </div>
+                          </div> */}
+                        <div class="-m-3 grid grid-cols-4 gap-4 ">
+                          <div>
+                            <button onClick={startMint}>
+                              <img src="../SterlingSunbathing.jpg"/>
+                            </button>
+                          </div>
+                          <div>
+                            <button onClick={startMint}>
+                              <img src="../SterlingSunbathing.jpg"/>
+                            </button>
+                          </div>
+                          <div>
+                            <button onClick={startMint}>
+                              <img src="../SterlingSunbathing.jpg"/>
+                            </button>
+                          </div>
+                          <div>
+                            <button onClick={startMint}>
+                              <img src="../SterlingSunbathing.jpg"/>
+                            </button>
+                          </div>
+                          <div>
+                            <button onClick={startMint}>
+                              <img src="../SterlingSunbathing.jpg"/>
+                            </button>
+                          </div>
+                          <div>
+                            <button onClick={startMint}>
+                              <img src="../SterlingSunbathing.jpg"/>
+                            </button>
+                          </div>
+                          <div>
+                            <button onClick={startMint}>
+                              <img src="../SterlingSunbathing.jpg"/>
+                            </button>
+                          </div>
+                          <div>
+                            <button onClick={startMint}>
+                              <img src="../SterlingSunbathing.jpg"/>
+                            </button>
+                          </div>
+                          <div>
+                            <button onClick={startMint}>
+                              <img src="../SterlingSunbathing.jpg"/>
+                            </button>
                           </div>
                         </div>
                       </div>
                     </div>
+                  </div>
                   </div>
                 </div>
               </div>
