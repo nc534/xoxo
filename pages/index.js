@@ -38,7 +38,7 @@ export default function Home() {
   const { sterlingPaperbagMint } = useMint({collectionId: "ab14ae84da38" });
   const { sterlingYawnMint } = useMint({collectionId: "b89241afe8f9" });
   const { sterlingChairMint } = useMint({collectionId: "ede8204b66ac" });
-  const { sterlingCoversMint } = useMint({collectionId: "ab694eaec22f" });
+  const { startMint } = useMint({collectionId: "ab694eaec22f" });
 
   const { signMessage } = useSignMessage({ message: "<MESSAGE>" });
   const { getSharedSecret } = useGetSharedSecret({
@@ -147,7 +147,7 @@ export default function Home() {
                               <MintButton collectionId="1820849d5909" />
                             </div>
                           </div> */}
-                        <div class="-m-3 grid grid-cols-4 gap-4 ">
+                        <div class="-m-3 grid grid-cols-4 gap-4 items-center">
                           <div>
                             <button onClick={sterlingSunbathingMint}>
                               <img src="../SterlingSunbathing.jpg" class="rounded-2xl hover:scale-105"/>
@@ -185,47 +185,47 @@ export default function Home() {
                           </div>
                           <div>
                             <button onClick={chewyWindowMint}>
-                              <img src="../ChewyLookingOutWindow.jpg" class="rounded-2xl"/>
+                              <img src="../ChewyLookingOutWindow.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                           <div>
                             <button onClick={sterlingChairMint}>
-                              <img src="../SterlingOnChair.jpg" class="rounded-2xl"/>
+                              <img src="../SterlingOnChair.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                           <div>
                             <button onClick={sterlingCoversMint}>
-                              <img src="../SterlingUnderCovers.jpg" class="rounded-2xl"/>
+                              <img src="../SterlingUnderCovers.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                           <div>
                             <button onClick={sterlingYawnMint}>
-                              <img src="../SterlingMidYawn.jpg" class="rounded-2xl"/>
+                              <img src="../SterlingMidYawn.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                           <div>
                             <button onClick={chewyFlowersMint}>
-                              <img src="../ChewyWithFlowers.jpg" class="rounded-2xl"/>
+                              <img src="../ChewyWithFlowers.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                           <div>
                             <button onClick={chewyHappyMint}>
-                              <img src="../HappyChewy.jpg" class="rounded-2xl"/>
+                              <img src="../HappyChewy.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                           <div>
-                            <button onClick={sterlingBlanketMint}>
-                              <img src="../SterlingSunbathing.jpg" class="rounded-2xl"/>
+                            <button onClick={startMint}>
+                              <img src="../SleepingSterlingOnBlanket.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                           <div>
                             <button onClick={chewySleepingMint}>
-                              <img src="../SleepingChewy.jpg" class="rounded-2xl"/>
+                              <img src="../SleepingChewy.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                           <div>
                             <button onClick={puppyChewyMint}>
-                              <img src="../PuppyChewy.jpg" class="rounded-2xl"/>
+                              <img src="../PuppyChewy.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                         </div>
