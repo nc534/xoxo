@@ -37,7 +37,7 @@ export default function Home() {
   const { sterlingBlanketMint } = useMint({collectionId: "e043090e5a26" });
   const { sterlingPaperbagMint } = useMint({collectionId: "ab14ae84da38" });
   const { sterlingYawnMint } = useMint({collectionId: "b89241afe8f9" });
-  const sterlingChairMint = useMint({collectionId: "ede8204b66ac" });
+  const { sterlingChairMint }= useMint({collectionId: "ede8204b66ac" });
   const { startMint } = useMint({collectionId: "ab694eaec22f" });
 
   const { signMessage } = useSignMessage({ message: "<MESSAGE>" });
@@ -224,7 +224,9 @@ export default function Home() {
                             </button>
                           </div>
                           <div>
+                            <MintButton collectionId="011b0741c913" />
                             <button onClick={puppyChewyMint}>
+                            <MintButton collectionId="757d5b59ee86" />
                               <img src="../PuppyChewy.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
