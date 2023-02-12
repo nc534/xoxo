@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+MintButton {
+  height: 120px;
+ }
+
 .marquee {
   --space: 3rem;
 
