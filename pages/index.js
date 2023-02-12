@@ -154,96 +154,99 @@ export default function Home() {
                           </div> */}
                         <div class="-m-3 grid grid-cols-4 gap-4 items-center">
                           <div>
-                            <div class="absolute invisible">
+                            <div class="absolute right-5 bottom-5">
                               <MintButton collectionId="1820849d5909" />
                             </div>
                               <img src="../SterlingSunbathing.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute invisible">
+                            <div class="absolute right-5 bottom-5">
                               <MintButton collectionId="e680973cd5bd" />
                             </div>
                               <img src="../ChewyAndSterling.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute invisible">
+                            <div class="absolute right-5 bottom-5">
                               <MintButton collectionId="7be1858f20c7" />
                             </div>
                               <img src="../SleepingSterlingCurled.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute invisible">
+                            <div class="absolute right-5 bottom-5">
                               <MintButton collectionId="f966ac01ae8b" />
                             </div>
                               <img src="../ChewyAndToy.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute invisible">
+                            <div class="absolute right-5 bottom-5">
                               <MintButton collectionId="ab14ae84da38" />
                             </div>
                               <img src="../SterlingInPaperBag.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute invisible">
+                            <div class="absolute right-5 bottom-5">
                               <MintButton collectionId="4c531c59cc82" />
                             </div>
                               <img src="../ChewyView.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute invisible">
+                            <div class="absolute right-5 bottom-5">
                               <MintButton collectionId="b26911637f2e" />
                             </div>
                               <img src="../ChewyMidYawn.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute invisible">
+                            <div class="absolute right-5 bottom-5">
                               <MintButton collectionId="d10388d182b6" />
                             </div>
                               <img src="../ChewyLookingOutWindow.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute invisible">
+                            <div class="absolute right-5 bottom-5">
                               <MintButton collectionId="ede8204b66ac" />
                             </div>
                               <img src="../SterlingOnChair.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
+                            <div class="absolute right-5 bottom-5">
+                              <MintButton collectionId="ab694eaec22f" />
+                            </div>
                             <button onClick={startMint}>
                               <img src="../SterlingUnderCovers.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
                           <div>
-                            <div class="absolute invisible">
+                            <div class="absolute right-5 bottom-5">
                               <MintButton collectionId="b89241afe8f9" />
                             </div>
                               <img src="../SterlingMidYawn.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute invisible">
+                            <div class="absolute right-5 bottom-5">
                               <MintButton collectionId="11fd5d2e56c2" />
                             </div>
                               <img src="../ChewyWithFlowers.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute invisible">
+                            <div class="absolute right-5 bottom-5">
                               <MintButton collectionId="f09198274723" />
                             </div>
                               <img src="../HappyChewy.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute invisible">
+                            <div class="absolute right-5 bottom-5e">
                               <MintButton collectionId="e043090e5a26" />
                             </div>
                             <img src="../SleepingSterlingOnBlanket.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute invisible">
+                            <div class="absolute right-5 bottom-5">
                               <MintButton collectionId="2b06512dee8b" />
                             </div>
                             <img src="../SleepingChewy.jpg" class="rounded-2xl hover:scale-105"/>
                           </div>
                           <div>
-                            <div class="absolute invisible">
+                            <div class="absolute right-5 bottom-5">
                               <MintButton collectionId="011b0741c913" />
                             </div>
                             <img src="../PuppyChewy.jpg" class="rounded-2xl hover:scale-105"/>
