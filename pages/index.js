@@ -37,7 +37,7 @@ export default function Home() {
   const { sterlingBlanketMint } = useMint({collectionId: "e043090e5a26" });
   const { sterlingPaperbagMint } = useMint({collectionId: "ab14ae84da38" });
   const { sterlingYawnMint } = useMint({collectionId: "b89241afe8f9" });
-  const { sterlingChairMint } = useMint({collectionId: "ede8204b66ac" });
+  const sterlingChairMint = useMint({collectionId: "ede8204b66ac" });
   const { startMint } = useMint({collectionId: "ab694eaec22f" });
 
   const { signMessage } = useSignMessage({ message: "<MESSAGE>" });
