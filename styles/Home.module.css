@@ -1,3 +1,7 @@
 .main {
   background-color: #171717;
 }
+
+MintButton {
+ height: 120px;
+}

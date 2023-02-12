@@ -74,15 +74,18 @@ export default function Home() {
                   <img className="h-8" src="/cometfavicon.png" alt="" />
                 </a>
               </div>
+              <LoginButton />
             </nav>
           </div>
           <main>
-            <div className="relative py-24 sm:py-32 lg:pb-40">
+            <div className="relative py-24">
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div>
-                  <h1 className="text-4xl font-bold tracking-tight text-purple-900 sm:text-6xl">
-                    Happy Hackathon!!!!
+                  <h1 className="text-4xl tracking-tight text-purple-900 sm:text-6xl">
+                    Chewy and Sterling NFTs
                   </h1>
+                  <p className="mt-1 text-sm text-gray-500 mb-2">Welcome to the page of Noel's Chewy and Sterling NFTs!  Here you can find some cute NFTs of a dog and a cat! 
+                    Meet Chewy and Sterling - two lovable critters! Collect them when you can. Enjoy!</p>
 
                   {/* <div className="marquee">
                     <div className="marquee__group">
@@ -106,8 +109,8 @@ export default function Home() {
                     <div>
                       <div class="rounded-2xl shadow-2xl shadow-slate-800/70">
                         <div class="relative grid gap-6 rounded-2xl bg-slate-800 px-5 py-6 sm:gap-6 sm:p-6 rounded-md">
-                          <h2 class="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">Here's a token of my love and affection,
-                          </h2>
+                          {/* <h2 class="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">Here's a token of my love and affection,
+                          </h2> */}
                       {/* <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
                         <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-slate-600 text-white sm:h-12 sm:w-12">
                           <UserCircleIcon
@@ -126,9 +129,9 @@ export default function Home() {
                         </div>
                       </div> */}
 
-                        <h2 className="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">
+                        {/* <h2 className="text-xl font-bold tracking-tight text-gray-800 sm:text-2xl">
                             A Solana NFT with our love's connection.
-                        </h2>
+                        </h2> */}
 
                         {/* <div className="-m-3 flex items-start rounded-lg p-3 transition duration-150 ease-in-out hover:bg-gray-50">
                             <div className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-slate-600 text-white sm:h-12 sm:w-12">
@@ -224,9 +227,8 @@ export default function Home() {
                             </button>
                           </div>
                           <div>
-                            <MintButton collectionId="011b0741c913" />
+                            <MintButton style="background:transparent;" collectionId="011b0741c913" />
                             <button onClick={puppyChewyMint}>
-                            <MintButton collectionId="757d5b59ee86" />
                               <img src="../PuppyChewy.jpg" class="rounded-2xl hover:scale-105"/>
                             </button>
                           </div>
